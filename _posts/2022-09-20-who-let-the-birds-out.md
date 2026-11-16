@@ -46,8 +46,6 @@ I'm pretty sure the same is possible with other providers such as Tier, but I di
 
 ### Limits everywhere
 
-![Meme "Limits everywhere!" with Buzz Lightyear and Woody from Toy Story](/assets/img/bird_limits_everywhere.webp)
-
 The Bird API should have different types of limits implemented. The allowed value for the radius should be limited. The number of Birds you receive from the API is limited to 250. But do you really need information about 250 Bird E-Scooter nearby? This value should also be limited. And the number of requests we are able to send to `/bird/chirp` within a reasonable amount of time should also be limited.
 
 ### Make it easy to get in contact
