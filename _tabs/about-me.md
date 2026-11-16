@@ -33,8 +33,3 @@ Dieser Blick des Angreifers hilft mir heute in der Verteidigung – zum Beispiel
 - LinkedIn: <https://www.linkedin.com/in/andreas-wienes-cyber-security/>
 - Mastodon: <https://infosec.exchange/@AndreasWienes>
 - E-Mail: mail \[at\] wienes \[dot\] com
-
-## Zertifikate
-
-- [Certified Ethical Hacker (CEH)](https://www.credly.com/badges/1da86fa7-a361-43c0-bf12-b8728050c664)
-- [Pentester Academy Certified Cloud Security Professional (PACSP)](https://bootcamps.pentesteracademy.com/course/cloud-security-aws-on-demand)
