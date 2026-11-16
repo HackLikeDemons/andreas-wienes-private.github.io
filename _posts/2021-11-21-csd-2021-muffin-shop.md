@@ -19,7 +19,7 @@ I will publish two differnet solutions here. At first my own and then a shorter 
 
 ## Introduction
 
-![muffin](/assets/img/muffin.webp)
+![Cartoon muffin with a small flag on top – the Muffin Shop challenge logo](/assets/img/muffin.webp)
 
 > I'll take you to the muffin shop (düdü düdü) I'll let you inject your little ..... payload... i guess. Anyway. Start the container and have a go at this little challenge. 
 
@@ -30,17 +30,17 @@ Good luck!
 ## My Solution
 This is what we see when we visit the web application for the first time:
 
-![muffin-welcome](/assets/img/muffin-welcome.webp)
+![Start page of the Muffin Shop web application](/assets/img/muffin-welcome.webp)
 
 Let's have a look into the source code of that page.
 
-![muffin-source](/assets/img/muffin-source.webp)
+![HTML source code of the Muffin Shop start page](/assets/img/muffin-source.webp)
 
 But there is nothing of interest in here.
 
 So I started gobuster and discovered other endpoints.
 
-![muffin-gobuster](/assets/img/muffin-gobuster.webp)
+![Gobuster output listing discovered endpoints of the Muffin Shop](/assets/img/muffin-gobuster.webp)
 
 But 'login' is the only functionality that is implemented in this version of the muffin shop.
 
@@ -50,25 +50,25 @@ From the source code we know that only three functions are actually working:
 
 **login**
 
-![muffin-source-login](/assets/img/muffin-source-login.webp)
+![Source code of the login function, which only writes login attempts to a log file](/assets/img/muffin-source-login.webp)
 
 But the login function doesn't do anything, but writing the login attempts into a log file. So it's not possible to log into a user's account and attacks like SQL injection won't work here.
 
 **logs**
 
-![muffin-source-logs](/assets/img/muffin-source-logs.webp)
+![Source code of the logs function, which renders the template logs.html](/assets/img/muffin-source-logs.webp)
 
 This method will render a template called 'logs.html'.
 
 Let's have a look on it:
 
-![muffin-logs](/assets/img/muffin-logs.webp)
+![Logs page showing all recorded login attempts](/assets/img/muffin-logs.webp)
 
 As assumed our login attempts are logged and we are able to see all of them here. 
 
 **rotate_logs**
 
-![muffin-source-rotate-logs](/assets/img/muffin-source-rotate-logs.webp)
+![Source code of the rotate_logs function that clears the log file](/assets/img/muffin-source-rotate-logs.webp)
 
 We can use this methode to clean up the log file.
 
@@ -82,11 +82,11 @@ From the source code we know that the app is using the Flask library. After a sh
 {% endraw %}
 as the username.
 
-![muffin-ssti-input](/assets/img/muffin-ssti-input.webp)
+![Login form with a template expression entered as username](/assets/img/muffin-ssti-input.webp)
 
 And as assumed my input is evaluated by the backend, as we can see the number 49 in the log-file.
 
-![muffin-ssti-poc](/assets/img/muffin-ssti-poc.webp)
+![Log file showing the evaluated result 49 – proof of server-side template injection](/assets/img/muffin-ssti-poc.webp)
 
 _So what's next?_
 
@@ -111,11 +111,11 @@ Then I've used
 
 as input for the username to search for all files that contain *flag* in it's name and afterwards cat the results out.
 
-![muffin-ssti-ls-cat](/assets/img/muffin-ssti-ls-cat.webp)
+![SSTI payload in the username field that searches for flag files and prints them](/assets/img/muffin-ssti-ls-cat.webp)
 
 And got this as results
 
-![muffin-ssti-ls-cat-output](/assets/img/muffin-ssti-ls-cat-output.webp)
+![Log output listing the files found by the SSTI payload](/assets/img/muffin-ssti-ls-cat-output.webp)
 
 So finally the last step was to use
 
@@ -128,14 +128,14 @@ So finally the last step was to use
 
 to get the content of flag.html
 
-![muffin-flag](/assets/img/muffin-flag.webp)
+![Log output containing the content of flag.html with the flag](/assets/img/muffin-flag.webp)
 
 
 ## Lexiea's Way
 
 User Lexiea found another, way smarter solution and shared it after the official solution was provided.
 
-![muffin-lexiea-solution](/assets/img/muffin-lexiea-solution.webp)
+![Lexiea's shorter alternative solution for the Muffin Shop](/assets/img/muffin-lexiea-solution.webp)
 
 _Damn, that was smart._
 
@@ -149,7 +149,7 @@ I tried this method on my own and entered
 
 And voilà we get the flag without using a lot of SSTI kung-fu.  
 
-![muffin-lexieia-flag](/assets/img/muffin-lexieia-flag.webp)
+![Flag retrieved with Lexiea's solution](/assets/img/muffin-lexieia-flag.webp)
 
 
 ## My Learnings

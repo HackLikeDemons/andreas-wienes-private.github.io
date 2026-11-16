@@ -9,7 +9,7 @@ toc: true
 
 In unserer vernetzten Welt sind Unternehmen und Organisationen zunehmend der Gefahr von Cyber-Bedrohungen ausgesetzt. Eine Methode, um die Sicherheit von Systemen zu stärken und potenzielle Schwachstellen zu identifizieren, ist das Threat Modeling, also die Bedrohungsanalyse. In diesem Artikel werde ich einen Einblick in das Thema Threat Modeling geben und die Vorteile sowie den Prozess einer Bedrohungsanalyse beleuchten.
 
-![what_could_go_wrong](/assets/img/what_could_go_wrong.webp)
+![Meme „What could possibly go wrong?“: Ein Arbeiter flext, und der Funkenflug trifft direkt zwei Gasflaschen](/assets/img/what_could_go_wrong.webp)
 
 ## Vorteile des Threat Modelings
 

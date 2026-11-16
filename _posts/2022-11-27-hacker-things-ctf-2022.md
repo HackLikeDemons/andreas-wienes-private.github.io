@@ -1,6 +1,5 @@
 ---
 title: Recap - Hacker Things CTF 2022
-lang: en
 date: 2022-11-27 14:51:26 +0100
 categories: [CTF]
 tags: 
@@ -9,7 +8,7 @@ tags:
 toc: true
 ---
 
-![hacker_things_ctf_2022](/assets/img/Welcome-to-Hacker-Things-2022.webp)
+![Begrüßungsbildschirm „Hacker Things – Welcome!“ in roter Schrift im Stil von Stranger Things](/assets/img/Welcome-to-Hacker-Things-2022.webp)
 
 Am 26. November 2022 hat der **Hacker Things CTF** stattgefunden. Für mich persönlich war es das dritte Capture the Flag Event in diesem Jahr. Allerdings war es auch mein erstes Onsite-CTF. Die weite Anreise von Hamburg nach Bonn hat sich aber durchaus gelohnt.
 
@@ -35,7 +34,7 @@ Nach sechs Stunden hat der 23 jährige [Dragos Albastroiu](https://adragos.ro/ab
 
 Den zweiten Platz hat sich Team FluxFingers verdient, gefolgt vom CTF-Team der TU Darmstadt auf Platz drei.
 
-![hacker_things_ctf_2022_scoring](/assets/img/hacker_things_ctf_2022_scoring.webp)
+![Punktetabelle des Hacker Things CTF 2022](/assets/img/hacker_things_ctf_2022_scoring.webp)
 
 Ab 20 Uhr ging es nach der Siegerehrung zu einem fröhlichen Get-Together über. In entspannter Atmosphäre bot sich bei Pizza, Mate, Kuchen und Bier die Gelegenheit neue Kontakte zu knüpfen. Hier konnte man sich über die CTF-Challenges und andere Themen austauschen und es wurde viel miteinander gelacht. 
 

@@ -33,4 +33,4 @@ It's not because I'm an expert level software developer (no I'm not) nor because
 _Hacking is not a crime._ 
 It's a creative way to explore the world we live in and to make it better.
 
-![](/assets/img/glider.webp)
+![Hacker emblem: the glider pattern from Conway's Game of Life](/assets/img/glider.webp)

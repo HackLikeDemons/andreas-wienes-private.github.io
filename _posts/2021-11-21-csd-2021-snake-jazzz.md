@@ -28,26 +28,26 @@ If you are interested in a write-up for the Muffin Shop challenge, [you will fin
 
 First things first. I use the Wappalyzer browser extension to figure out, which technologies are used in this web application
 
-![snake-wappalyzer](/assets/img/snake-wappalyzer.webp)
+![Wappalyzer extension showing Python and Flask as backend technologies](/assets/img/snake-wappalyzer.webp)
 
 Okay we have Python Flask here in the backend.
 
 This is what we see when we visit the web application for the first time:
 
-![snake-welcome](/assets/img/snake-welcome.webp)
+![Snake Jazzzzz start page: a postcard form with three input fields](/assets/img/snake-welcome.webp)
 
 A simple HTML form with three input fields.
 Let's try a simple Cross Site Scripting injection (XSS) here.
 
-![snake-xss](/assets/img/snake-xss.webp)
+![XSS test payload entered into the postcard form](/assets/img/snake-xss.webp)
 
 But what's that? Seems like some kind of Web Application Firewall (WAF) is in place here.
 
-![snake-waf](/assets/img/snake-waf.webp)
+![Error page from the web application firewall blocking the XSS attempt](/assets/img/snake-waf.webp)
 
 Okay let's have a look into the source code of that page.
 
-![snake-source](/assets/img/snake-source.webp)
+![Page source with an HTML comment pointing to the /source path](/assets/img/snake-source.webp)
 
 
 There is a HTML comment inside pointing us to the /source path.
@@ -123,11 +123,11 @@ But from another challenge ( [Muffin Shop]({% post_url 2021-11-21-csd-2021-muffi
 
 So let's try the same thing here.
 
-![snake-ssti-poc](/assets/img/snake-ssti-poc.webp)
+![Template expression entered into the form as SSTI test](/assets/img/snake-ssti-poc.webp)
 
 And it works!
 
-![snake-ssti-poc](/assets/img/snake-ssti-poc-working.webp)
+![Rendered postcard showing the evaluated template expression – SSTI works](/assets/img/snake-ssti-poc-working.webp)
 
 This is great cause now we are able to execute code. But there is still the limit of 15 characters we need to overcome.
 
@@ -191,11 +191,11 @@ That means we can bypass the length limit by using list-type elements as input.
 
 Let's do this by using Burp repeater.
 
-![snake-ssti-array-test](/assets/img/snake-ssti-array-test.webp)
+![Burp Repeater request sending recipient and sender as lists to bypass the length limit](/assets/img/snake-ssti-array-test.webp)
 
 Both values of `recipient` and `sender` are longer than the allowed 15 characters. But because of the usage of the len() method in combination with the inputted list-elements, we get
 
-![snake-ssti-array-working](/assets/img/snake-ssti-array-working.webp)
+![Response showing that the list values bypass the 15-character limit](/assets/img/snake-ssti-array-working.webp)
 
 Now we are able to use the SSTI and can bypass the size limit.
 
@@ -219,7 +219,7 @@ I could use the following input to get the username, the current directoy and a 
 ```
 {% endraw %}
 
-![snake-array-working](/assets/img/snake-array-working.webp)
+![SSTI payload sent as list element is executed despite the length limit](/assets/img/snake-array-working.webp)
 
 Then I've used
 {% raw %}
@@ -231,9 +231,9 @@ Then I've used
 
 to search for all files that contain *flag* in it's name and afterwards cat the results out.
 
-![snake-find](/assets/img/snake-find.webp)
+![SSTI payload output listing files with flag in their name](/assets/img/snake-find.webp)
 
-![snake-flag](/assets/img/snake-flag.webp)
+![The captured flag of the Snake Jazzzzz challenge](/assets/img/snake-flag.webp)
 
 
 ## My Learnings

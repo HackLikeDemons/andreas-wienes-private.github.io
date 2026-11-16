@@ -1,0 +1,6 @@
+# Sicherheitslücke auf dieser Website gefunden? Danke, dass du sie meldest!
+# Found a security issue on this website? Thanks for reporting it!
+Contact: mailto:mail@wienes.com
+Expires: 2027-11-16T00:00:00.000Z
+Preferred-Languages: de, en
+Canonical: https://andreas-wienes.me/.well-known/security.txt
