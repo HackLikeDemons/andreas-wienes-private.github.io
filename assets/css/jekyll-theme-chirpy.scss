@@ -1,0 +1,30 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Kontrast der Menütexte im Dunkelmodus erhöhen (WCAG AA, vorher 3,99:1) */
+:root[data-bs-theme='dark'] {
+  --sidebar-muted-color: #9a9a9a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme]) {
+    --sidebar-muted-color: #9a9a9a;
+  }
+}
+
+#sidebar ul li.nav-item a.nav-link span {
+  opacity: 1;
+}
