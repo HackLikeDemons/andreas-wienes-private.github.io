@@ -1,7 +1,6 @@
 ---
 title: Bedrohungsanalyse - Eine kurze Einführung in das Threat Modeling
-author: Andreas Wienes
-date: 2023-05-24 - 19:25:26 +0100
+date: 2023-05-24 19:25:26 +0100
 categories: [SECURITY]
 tags: 
   - "Threat Modeling"
@@ -10,7 +9,7 @@ toc: true
 
 In unserer vernetzten Welt sind Unternehmen und Organisationen zunehmend der Gefahr von Cyber-Bedrohungen ausgesetzt. Eine Methode, um die Sicherheit von Systemen zu stärken und potenzielle Schwachstellen zu identifizieren, ist das Threat Modeling, also die Bedrohungsanalyse. In diesem Artikel werde ich einen Einblick in das Thema Threat Modeling geben und die Vorteile sowie den Prozess einer Bedrohungsanalyse beleuchten.
 
-![what_could_go_wrong](/assets/img/what_could_go_wrong.png)
+![what_could_go_wrong](/assets/img/what_could_go_wrong.webp)
 
 ## Vorteile des Threat Modelings
 

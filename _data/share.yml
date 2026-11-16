@@ -1,18 +1,11 @@
-#  Sharing options at the bottom of the post.
-#  Icons from <https://fontawesome.com/>
+#  Teilen-Optionen unter jedem Artikel.
+#  Icons von <https://fontawesome.com/>
 
 platforms:
-  -
-    type: Twitter
-    icon: "fab fa-twitter"
-    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"  
-  -
-    type: Telegram
-    icon: "fab fa-telegram"
-    link: "https://telegram.me/share?text=TITLE&url=URL"
-  
-  -
-    type: Linkedin
+  - type: Linkedin
     icon: "fab fa-linkedin"
-    link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
-  
+    link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
+
+  - type: Bluesky
+    icon: "fa-brands fa-bluesky"
+    link: "https://bsky.app/intent/compose?text=TITLE%20URL"

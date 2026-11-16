@@ -1,7 +1,7 @@
 ---
 title: YesWeHack - Live Bug Bounty at Nullcon Berlin 2023
-author: Andreas Wienes
-date: 2023-05-14 - 18:25:26 +0100
+lang: en
+date: 2023-05-14 18:25:26 +0100
 categories: [SECURITY]
 tags: 
   - "Hacking"
@@ -14,4 +14,4 @@ On March 9-10, 2023, YesWeHack collaborated with OTTO, Germany's leading e-comme
 
 The event brought together a group of talented bug bounty hunters to identify potential vulnerabilities on OTTO's exclusive perimeter, culminating in an intense 30-hour hacking session. Dozens of participants took part in this unique opportunity to showcase their skills and compete for rewards while helping to improve OTTO's security measures.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JbXKorpdYe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+▶️ [Watch the video on YouTube](https://www.youtube.com/watch?v=JbXKorpdYe4) (opens YouTube)

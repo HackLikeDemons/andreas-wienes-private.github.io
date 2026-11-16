@@ -1,7 +1,7 @@
 ---
 title: Who let the birds out?
-author: Andreas Wienes
-date: 2022-09-20 - 16:25:26 +0100
+lang: en
+date: 2022-09-20 16:25:26 +0100
 categories: [HACKING]
 tags: 
   - "infosec"
@@ -12,8 +12,8 @@ toc: true
 
 Bird e-scooters are becoming more and more popular in bigger cities. And despite the fact that they are laying around like pieces of ugly looking electronic trash, they are sometimes  actually quite useful. 
 
-![bird_twitter](/assets/img/bird_im_wald.jpg)
-![broken_voi_scooter](/assets/img/Broken-Voi-Scooter.jpeg)
+![bird_twitter](/assets/img/bird_im_wald.webp)
+![broken_voi_scooter](/assets/img/Broken-Voi-Scooter.webp)
 
 And they are easy to get. You just need to open the nice looking mobile app, find a bird nearby and then finally book it. That's it. - Enjoy your ride!
 
@@ -46,7 +46,7 @@ I'm pretty sure the same is possible with other providers such as Tier, but I di
 
 ### Limits everywhere
 
-![bird_twitter](/assets/img/bird_limits_everywhere.png)
+![bird_twitter](/assets/img/bird_limits_everywhere.webp)
 
 The Bird API should have different types of limits implemented. The allowed value for the radius should be limited. The number of Birds you receive from the API is limited to 250. But do you really need information about 250 Bird E-Scooter nearby? This value should also be limited. And the number of requests we are able to send to `/bird/chirp` within a reasonable amount of time should also be limited.
 
@@ -55,9 +55,9 @@ The Bird API should have different types of limits implemented. The allowed valu
 The people at Bird don't use [/.well-known/security.txt](https://securitytxt.org/) so I've tried to contact them via Twitter and e-mail.
 This is what I got in response:
 
-![bird_twitter](/assets/img/bird_twitter.png)
-![bird_my_email](/assets/img/bird_my_email.png)
-![bird_email_answer](/assets/img/bird_email_answer.png)
+![bird_twitter](/assets/img/bird_twitter.webp)
+![bird_my_email](/assets/img/bird_my_email.webp)
+![bird_email_answer](/assets/img/bird_email_answer.webp)
 
 So please as a company use the security.txt or start a bug bounty program to make reporting security findings easier. 
 

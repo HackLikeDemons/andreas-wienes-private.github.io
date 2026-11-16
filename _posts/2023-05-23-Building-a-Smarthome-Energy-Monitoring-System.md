@@ -1,7 +1,7 @@
 ---
 title: Building a Smart Home Energy Monitoring System
-author: Andreas Wienes
-date: 2023-05-23 - 19:25:26 +0100
+lang: en
+date: 2023-05-23 19:25:26 +0100
 categories: [SMARTHOME]
 tags: 
   - "smarthome"
@@ -12,7 +12,7 @@ toc: true
 
 In my quest to monitor and optimise my home's solar energy system, I ventured into the world of Docker, InfluxDB and Grafana. With little prior knowledge of these technologies, I was determined to learn and apply them to create a smart home energy monitoring system. This article describes my experiences, the challenges I faced, and the valuable insights I gained along the way.
 
-![energy_monitoring](/assets/img/energy_monitoring.png)
+![energy_monitoring](/assets/img/energy_monitoring.webp)
 
 ### Key technological components
 

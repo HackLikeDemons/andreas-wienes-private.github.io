@@ -1,20 +1,20 @@
-#  The contact options.
+#  Kontaktmöglichkeiten unten in der Seitenleiste.
 
--
-  type: github
-  icon: 'fab fa-github'
--
-  type: twitter
-  icon: 'fab fa-twitter'
--
-  type: email
-  icon: 'fas fa-envelope'
-  noblank: true            # open link in current tab
--
-  type: rss
-  icon: 'fas fa-rss'
+- type: github
+  icon: "fab fa-github"
+
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/andreas-wienes-cyber-security/"
+
+- type: mastodon
+  icon: "fab fa-mastodon"
+  url: "https://infosec.exchange/@AndreasWienes" # rel="me" zur Verifizierung
+
+- type: email
+  icon: "fas fa-envelope"
   noblank: true
--
-  type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/andreas-wienes-cyber-security/'                  # Fill with your Linkedin homepage
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true

@@ -1,6 +1,6 @@
 ---
 title: CSD 2021 Muffin Shop Write-Up
-author: Andreas Wienes
+lang: en
 date: 2021-11-21 14:11:26 +0100
 categories: [CTF]
 tags: 
@@ -19,7 +19,7 @@ I will publish two differnet solutions here. At first my own and then a shorter 
 
 ## Introduction
 
-![muffin](/assets/img/muffin.png)
+![muffin](/assets/img/muffin.webp)
 
 > I'll take you to the muffin shop (düdü düdü) I'll let you inject your little ..... payload... i guess. Anyway. Start the container and have a go at this little challenge. 
 
@@ -30,17 +30,17 @@ Good luck!
 ## My Solution
 This is what we see when we visit the web application for the first time:
 
-![muffin-welcome](/assets/img/muffin-welcome.png)
+![muffin-welcome](/assets/img/muffin-welcome.webp)
 
 Let's have a look into the source code of that page.
 
-![muffin-source](/assets/img/muffin-source.png)
+![muffin-source](/assets/img/muffin-source.webp)
 
 But there is nothing of interest in here.
 
 So I started gobuster and discovered other endpoints.
 
-![muffin-gobuster](/assets/img/muffin-gobuster.png)
+![muffin-gobuster](/assets/img/muffin-gobuster.webp)
 
 But 'login' is the only functionality that is implemented in this version of the muffin shop.
 
@@ -50,25 +50,25 @@ From the source code we know that only three functions are actually working:
 
 **login**
 
-![muffin-source-login](/assets/img/muffin-source-login.png)
+![muffin-source-login](/assets/img/muffin-source-login.webp)
 
 But the login function doesn't do anything, but writing the login attempts into a log file. So it's not possible to log into a user's account and attacks like SQL injection won't work here.
 
 **logs**
 
-![muffin-source-logs](/assets/img/muffin-source-logs.png)
+![muffin-source-logs](/assets/img/muffin-source-logs.webp)
 
 This method will render a template called 'logs.html'.
 
 Let's have a look on it:
 
-![muffin-logs](/assets/img/muffin-logs.png)
+![muffin-logs](/assets/img/muffin-logs.webp)
 
 As assumed our login attempts are logged and we are able to see all of them here. 
 
 **rotate_logs**
 
-![muffin-source-rotate-logs](/assets/img/muffin-source-rotate-logs.png)
+![muffin-source-rotate-logs](/assets/img/muffin-source-rotate-logs.webp)
 
 We can use this methode to clean up the log file.
 
@@ -82,11 +82,11 @@ From the source code we know that the app is using the Flask library. After a sh
 {% endraw %}
 as the username.
 
-![muffin-ssti-input](/assets/img/muffin-ssti-input.png)
+![muffin-ssti-input](/assets/img/muffin-ssti-input.webp)
 
 And as assumed my input is evaluated by the backend, as we can see the number 49 in the log-file.
 
-![muffin-ssti-poc](/assets/img/muffin-ssti-poc.png)
+![muffin-ssti-poc](/assets/img/muffin-ssti-poc.webp)
 
 _So what's next?_
 
@@ -111,11 +111,11 @@ Then I've used
 
 as input for the username to search for all files that contain *flag* in it's name and afterwards cat the results out.
 
-![muffin-ssti-ls-cat](/assets/img/muffin-ssti-ls-cat.png)
+![muffin-ssti-ls-cat](/assets/img/muffin-ssti-ls-cat.webp)
 
 And got this as results
 
-![muffin-ssti-ls-cat-output](/assets/img/muffin-ssti-ls-cat-output.png)
+![muffin-ssti-ls-cat-output](/assets/img/muffin-ssti-ls-cat-output.webp)
 
 So finally the last step was to use
 
@@ -128,14 +128,14 @@ So finally the last step was to use
 
 to get the content of flag.html
 
-![muffin-flag](/assets/img/muffin-flag.png)
+![muffin-flag](/assets/img/muffin-flag.webp)
 
 
 ## Lexiea's Way
 
 User Lexiea found another, way smarter solution and shared it after the official solution was provided.
 
-![muffin-lexiea-solution](/assets/img/muffin-lexiea-solution.png)
+![muffin-lexiea-solution](/assets/img/muffin-lexiea-solution.webp)
 
 _Damn, that was smart._
 
@@ -149,7 +149,7 @@ I tried this method on my own and entered
 
 And voilà we get the flag without using a lot of SSTI kung-fu.  
 
-![muffin-lexieia-flag](/assets/img/muffin-lexieia-flag.png)
+![muffin-lexieia-flag](/assets/img/muffin-lexieia-flag.webp)
 
 
 ## My Learnings

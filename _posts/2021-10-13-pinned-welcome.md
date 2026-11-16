@@ -1,6 +1,6 @@
 ---
 title: 📌 Welcome!
-author: Andreas Wienes
+lang: en
 date: 2021-10-13 14:28:55 +0100
 categories: [META]
 mermaid: false
