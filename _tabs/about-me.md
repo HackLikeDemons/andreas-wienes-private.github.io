@@ -21,7 +21,7 @@ Dieser Blick des Angreifers hilft mir heute in der Verteidigung – zum Beispiel
 
 ## Worüber ich mich gern austausche
 
-- Operative Cyber Security und die fachliche Führung eines Security-Teams
+- Operative Cyber Security sowie Aufbau und fachliche Führung von Security-Teams
 - Threat Modeling und Sicherheit von Anfang an
 - KI: Was sie leisten kann, wo ihre Grenzen liegen und welche neuen Risiken sie bringt
 
