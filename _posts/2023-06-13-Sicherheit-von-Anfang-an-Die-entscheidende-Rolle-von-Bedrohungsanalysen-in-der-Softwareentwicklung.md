@@ -1,9 +1,8 @@
 ---
 title: "Sicherheit von Anfang an: Die entscheidende Rolle von Bedrohungsanalysen in der Softwareentwicklung"
 date: 2023-06-13 20:25:26 +0100
-categories: [SECURITY]
-tags: 
-  - "Threat Modeling"
+categories: [Security]
+tags: [threat modeling, sdlc]
 toc: true
 ---
 

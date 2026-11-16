@@ -2,11 +2,8 @@
 title: Building a Smart Home Energy Monitoring System
 lang: en
 date: 2023-05-23 19:25:26 +0100
-categories: [SMARTHOME]
-tags: 
-  - "smarthome"
-  - "home automation"
-  - "renewable energy"
+categories: [Smart Home]
+tags: [home automation, energy monitoring]
 toc: true
 ---
 

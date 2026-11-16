@@ -1,7 +1,7 @@
 ---
 title: 📌 Willkommen!
 date: 2021-10-13 14:28:55 +0100
-categories: [META]
+categories: [Meta]
 mermaid: false
 pin: true
 toc: false

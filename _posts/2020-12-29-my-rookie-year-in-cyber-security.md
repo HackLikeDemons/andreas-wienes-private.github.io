@@ -2,9 +2,8 @@
 title: What I’ve learned during my Rookie Year in Cyber Security
 lang: en
 date: 2020-12-29 23:11:26 +0100
-categories: [lessons-learned]
-tags: 
-  - "infosec"
+categories: [Karriere]
+tags: [lessons learned, oscp]
 toc: true
 ---
 

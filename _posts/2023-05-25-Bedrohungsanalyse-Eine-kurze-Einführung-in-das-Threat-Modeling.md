@@ -1,9 +1,8 @@
 ---
 title: Bedrohungsanalyse - Eine kurze Einführung in das Threat Modeling
 date: 2023-05-24 19:25:26 +0100
-categories: [SECURITY]
-tags: 
-  - "Threat Modeling"
+categories: [Security]
+tags: [threat modeling]
 toc: true
 ---
 

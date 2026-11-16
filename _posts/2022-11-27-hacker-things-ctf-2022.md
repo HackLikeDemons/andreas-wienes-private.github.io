@@ -2,9 +2,7 @@
 title: Recap - Hacker Things CTF 2022
 date: 2022-11-27 14:51:26 +0100
 categories: [CTF]
-tags: 
-  - "infosec"
-  - "ctf"
+tags: [events]
 toc: true
 ---
 

@@ -2,9 +2,8 @@
 title: Who let the birds out?
 lang: en
 date: 2022-09-20 16:25:26 +0100
-categories: [HACKING]
-tags: 
-  - "infosec"
+categories: [Security]
+tags: [api security, iot]
 toc: true
 ---
 

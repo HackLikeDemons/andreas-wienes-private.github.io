@@ -2,11 +2,8 @@
 title: YesWeHack - Live Bug Bounty at Nullcon Berlin 2023
 lang: en
 date: 2023-05-14 18:25:26 +0100
-categories: [SECURITY]
-tags: 
-  - "Hacking"
-  - "Bug Bounty"
-  - "Video"
+categories: [Security]
+tags: [bug bounty, events]
 toc: false
 ---
 

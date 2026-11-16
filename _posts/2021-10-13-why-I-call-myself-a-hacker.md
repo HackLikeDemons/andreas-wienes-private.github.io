@@ -2,7 +2,8 @@
 title: Why I call myself a Hacker
 lang: en
 date: 2021-10-13 21:21:26 +0100
-categories: [HACKING]
+categories: [Karriere]
+tags: [hacker culture]
 mermaid: false
 pin: false
 toc: false

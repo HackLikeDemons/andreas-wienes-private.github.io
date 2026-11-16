@@ -3,10 +3,7 @@ title: CSD 2021 Snake Jazzzzz Write-Up
 lang: en
 date: 2021-11-21 18:11:26 +0100
 categories: [CTF]
-tags: 
-  - "infosec"
-  - "ctf"
-  - "writeup"
+tags: [write-up]
 toc: true
 ---
 
