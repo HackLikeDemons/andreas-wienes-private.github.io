@@ -24,6 +24,7 @@ Dieser Blick des Angreifers hilft mir heute in der Verteidigung – zum Beispiel
 - Operative Cyber Security sowie Aufbau und fachliche Führung von Security-Teams
 - Threat Modeling und Sicherheit von Anfang an
 - KI: Was sie leisten kann, wo ihre Grenzen liegen und welche neuen Risiken sie bringt
+- KI in der Security: wie sie im Alltag hilft – bei Erkennung, Auswertung und Automatisierung
 
 ## Kontakt
 
