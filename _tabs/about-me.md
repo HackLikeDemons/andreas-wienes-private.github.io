@@ -3,38 +3,37 @@ title: Über mich
 icon: fas fa-user
 order: 1
 permalink: /about-me/
+redirect_from:
+  - /my-offer/
 ---
 
+## Hallo 👋
 
-## Hello 👋
+Ich bin **Andreas** und lebe in Hamburg. Bei [Hamburg Wasser](https://www.hamburgwasser.de/) bin ich für die fachliche Führung des operativen Cyber-Security-Teams zuständig – ich bin also auf der verteidigenden Seite unterwegs: Angriffe erkennen, Systeme schützen, im Ernstfall richtig reagieren.
 
-My name is **Andreas** and I'm a [Hacker]({% post_url 2021-10-13-why-I-call-myself-a-hacker %}). I love to learn new things and use my skills to test IT systems for security flaws and bugs. I live in Hamburg, Germany and work at Hamburg Wasser as a cyber security engineer.
+Neben Cyber Security beschäftige ich mich mit den **Möglichkeiten und Grenzen von künstlicher Intelligenz** – was sie heute wirklich kann, wo sie scheitert und was sie für die Sicherheit bedeutet.
 
-### My Expertise
-- Penetration Testing
-- Bug Bounty Hunting
-- Web Application Security
-- Mobile Application Security (Android)
-- AWS Cloud Security
-- IT Security Trainings
-- Threat Modelling
+## Woher ich komme
 
-### Get in Contact
-📫 You can contact me via
-- Mastodon: <https://infosec.exchange/@AndreasWienes>
-- Mail: mail \[at\] wienes \[dot\] com
+Angefangen habe ich offensiv: Ich habe Penetrationstests gemacht, an Bug-Bounty-Programmen und CTFs teilgenommen und Sicherheitslücken gesucht, bevor es andere tun. Davon erzählen die älteren Artikel hier. Warum ich mich trotzdem bis heute [Hacker]({% post_url 2021-10-13-why-I-call-myself-a-hacker %}) nenne, steht in einem eigenen Beitrag.
+
+Dieser Blick des Angreifers hilft mir heute in der Verteidigung – zum Beispiel bei der [Bedrohungsanalyse]({% post_url 2023-05-25-Bedrohungsanalyse-Eine-kurze-Einführung-in-das-Threat-Modeling %}).
+
+## Worüber ich mich gern austausche
+
+- Operative Cyber Security und die fachliche Führung eines Security-Teams
+- Threat Modeling und Sicherheit von Anfang an
+- KI: Was sie leisten kann, wo ihre Grenzen liegen und welche neuen Risiken sie bringt
+
+## Kontakt
+
+📫 Am besten erreichst du mich über
+
 - LinkedIn: <https://www.linkedin.com/in/andreas-wienes-cyber-security/>
+- Mastodon: <https://infosec.exchange/@AndreasWienes>
+- E-Mail: mail \[at\] wienes \[dot\] com
 
-## Professional Achievements
+## Zertifikate
 
-![Certified Ethical Hacker](/assets/img/CEH_2E345519D3F7.webp){: .left width="200" height="200"}
-
-[Certified Ethical Hacker (CEH) – Nachweis bei Credly](https://www.credly.com/badges/1da86fa7-a361-43c0-bf12-b8728050c664)
-
-[Pentester Academy Certified Cloud Security Professional (PACSP)](https://bootcamps.pentesteracademy.com/course/cloud-security-aws-on-demand)
-
-#### Hack The Box
-[Profil bei Hack The Box](https://app.hackthebox.com/profile/205798)
-
-#### TryHackMe
-[Profil bei TryHackMe](https://tryhackme.com/)
+- [Certified Ethical Hacker (CEH)](https://www.credly.com/badges/1da86fa7-a361-43c0-bf12-b8728050c664)
+- [Pentester Academy Certified Cloud Security Professional (PACSP)](https://bootcamps.pentesteracademy.com/course/cloud-security-aws-on-demand)
